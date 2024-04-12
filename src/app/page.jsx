@@ -4,7 +4,6 @@ import { Container } from '@/components/Container';
 import Image from 'next/image';
 
 export default function Home() {
-
     return (
         <Container className="text-black -mt-12">
             <header className="text-center">
