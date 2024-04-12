@@ -17,16 +17,15 @@ export default function Home() {
 
             <section className="my-12 text-center">
                 <h2 className="text-3xl font-semibold">Project Documents</h2>
-                <div className="mt-4">
-                    <a href="/inst-specs.pdf" target="_blank" className="mx-2 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700 transition duration-200">Installation
-                        Details</a>
-                    <a href="/qoute.pdf" target="_blank" className="mx-2 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700 transition duration-200">Supplier
-                        Qoute</a>
-                    <a href="/contact.jpg" target="_blank" className="mx-2 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700 transition duration-200">Supplier
+                <div className="mt-4 flex flex-col sm:flex-row justify-center items-center sm:items-start gap-2 sm:gap-4">
+                    <a href="/inst-specs.pdf" target="_blank"
+                       className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700 transition duration-200 mb-2 sm:mb-0 sm:mx-2">Installation Details</a>
+                    <a href="/qoute.pdf" target="_blank"
+                       className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700 transition duration-200 mb-2 sm:mb-0 sm:mx-2">Supplier Quote</a>
+                    <a href="/contact.jpg" target="_blank" className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700 transition duration-200 sm:mx-2">Supplier
                         Contact</a>
                 </div>
             </section>
-
 
             <section className="my-12">
                 <h2 className="text-3xl text-center font-semibold">Project Overview</h2>
@@ -44,21 +43,22 @@ export default function Home() {
 
             <section className="my-12">
                 <h2 className="text-3xl text-center font-semibold">Installation Location</h2>
-                <div className="flex justify-center my-4 items-start gap-4">
-                    <Image
-                        src="/location.png"
-                        alt="Installation Location Map"
-                        width={ 336 }
-                        height={ 360 }
-                        className="rounded-lg shadow-lg"
-                    />
-                    <div className="rounded-lg shadow-lg overflow-hidden">
+                <div className="flex flex-col md:flex-row justify-center my-4 items-center md:items-start gap-4">
+                    <div className="w-full md:w-auto">
+                        <Image
+                            src="/location.png"
+                            alt="Installation Location Map"
+                            width={ 336 }
+                            height={ 360 }
+                            layout="responsive"
+                            className="rounded-lg shadow-lg"
+                        />
+                    </div>
+                    <div className="w-full md:w-auto rounded-lg shadow-lg overflow-hidden">
                         <video
                             src="/Parkvid.mp4"
-                            width="300"
-                            height="300"
                             playsInline
-                            className="max-w-full h-auto"
+                            className="w-full rounded-lg"
                             controls
                         />
                     </div>
